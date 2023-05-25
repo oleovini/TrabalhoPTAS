@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { pessoa } = require('./models');
+const { Pessoa } = require('./models');
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/pessoas', async function(req, res){
-  var pessoas = await pessoa.findAll();
+  var pessoas = await Pessoa.findAll();
   res.render('index', { pessoas });
 })
 
