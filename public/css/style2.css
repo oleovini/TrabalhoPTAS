@@ -1,0 +1,59 @@
+.perfil {
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .imagemdefundo {
+    width: 100%;
+    height: 100px;
+    background:gray;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .perfil-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .imagemdeperfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto 10px;
+  }
+  
+  .imagemdeperfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .informperfil {
+    margin-bottom: 10px;
+  }
+  
+  .nomeperfil,
+  .idadeperfil {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .botaodelete{
+    background-color: #ffd700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  

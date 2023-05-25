@@ -1,0 +1,82 @@
+body {
+  background: url(https://images.pexels.com/photos/6985001/pexels-photo-6985001.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-6985001.jpg&fm=jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin: 30px auto;
+  width: 990px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bt{
+  margin-top:100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bt:hover{
+  background-color: #0056b3;
+}
+.formu{
+  position:relative;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  width:30vh;
+  margin-top: 10%;
+}
+
+.tudo{
+  margin: auto;
+  background: rgba(0,0,0,0.5);
+  width:50vh;
+  height:70vh;
+  border-radius:15px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+.input-container input[type="text"] {
+  margin-top:10%;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  
+}
+
+.input-container input[type="text"]:focus {
+  border-bottom: 2px solid #007bff;
+  outline: none;
+}
+
+.input-container input[type="text"]:focus + label {
+  top: -10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #aaa;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+label{
+  margin-top:10%;
+}

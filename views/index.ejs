@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style2.css">
+  <title>Document</title>
+</head>
+<body>
+
+<% pessoas.forEach((pessoa) => { %>
+
+  <div class="perfil">
+    <div class="imagemdeperfil-wrapper">
+      <div class="imagemdefundo">
+       <!--Eu add no css-->
+      </div>
+      <div class="imagemdeperfil">
+    <!---Imagem aleatória pra ficar bonitin-->
+        <img src="https://github.com/oleovini.png" alt="Imagem de Perfil">
+        <%= pessoa.id %>
+      </div>
+    </div>
+    <div class="informperfil">
+    <!--Nome-->
+      <h3 class="nomeperfil"><%= pessoa.nome %> <%= pessoa.sobrenome %></h3>
+    <!--Idade-->
+      <p class="idadeperfil"><span class="idd"><%= pessoa.idade %></span> Anos</p>
+    </div>
+    <!--Deletar-->
+    <div class="botoes">
+      <button class="botaodelete"><a href="/pessoas/deletar?id=<% = pessoas.id %>">DELETAR</a></button>
+    </div>
+  </div>
+
+<% }) %>
+
+
+  
+</body>
+</html>
+
+
